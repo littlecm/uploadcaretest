@@ -1,0 +1,28 @@
+<script type="module">
+    import * as LR from "https://cdn.jsdelivr.net/npm/@uploadcare/blocks@0.30.5/web/lr-file-uploader-regular.min.js";
+
+    LR.registerBlocks(LR);
+</script>
+
+<style>
+.my-config {
+  --darkmode: 0;
+  --h-accent: 223;
+  --s-accent: 100%;
+  --l-accent: 61%;
+}
+</style>
+<lr-config
+    ctx-name="my-uploader"
+    pubkey="9b08289994a0d4baecd8"
+    max-local-file-size-bytes="10000000"
+    source-list="local, url"
+    use-cloud-image-editor="false"
+></lr-config>
+
+<lr-file-uploader-regular
+    css-src="https://cdn.jsdelivr.net/npm/@uploadcare/blocks@0.30.5/web/lr-file-uploader-regular.min.css"
+    ctx-name="my-uploader"
+    class="my-config"
+>
+</lr-file-uploader-regular>
